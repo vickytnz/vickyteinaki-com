@@ -1,0 +1,94 @@
+---
+layout: post
+title: Speedy Mondays (Super Mondays July 2013)
+date: 2013-07-30 16:17:59.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Coding
+- Event Notes
+tags:
+- js
+- optimisation
+- php
+- supermondays
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '1548039718'
+  _wpas_done_all: '1'
+  _thumbnail_id: '1746'
+  _wpas_skip_2538949: '1'
+  _wpas_skip_6516624: '1'
+  _wp_rp_related_posts_query_result_cache_expiration: '1429251231'
+  _wp_rp_related_posts_query_result_cache_5: a:10:{i:0;O:8:"stdClass":2:{s:7:"post_id";s:4:"1878";s:5:"score";s:17:"53.95998666937799";}i:1;O:8:"stdClass":2:{s:7:"post_id";s:4:"1819";s:5:"score";s:16:"52.3830719485919";}i:2;O:8:"stdClass":2:{s:7:"post_id";s:4:"1693";s:5:"score";s:17:"33.87750244158231";}i:3;O:8:"stdClass":2:{s:7:"post_id";s:4:"1752";s:5:"score";s:18:"29.085744885224653";}i:4;O:8:"stdClass":2:{s:7:"post_id";s:4:"1712";s:5:"score";s:18:"26.883729886148753";}i:5;O:8:"stdClass":2:{s:7:"post_id";s:3:"124";s:5:"score";s:18:"26.487178916920964";}i:6;O:8:"stdClass":2:{s:7:"post_id";s:3:"142";s:5:"score";s:17:"23.04941389025086";}i:7;O:8:"stdClass":2:{s:7:"post_id";s:4:"1887";s:5:"score";s:18:"21.810572565541666";}i:8;O:8:"stdClass":2:{s:7:"post_id";s:3:"100";s:5:"score";s:18:"18.004525411779472";}i:9;O:8:"stdClass":2:{s:7:"post_id";s:2:"91";s:5:"score";s:18:"18.004525411779472";}}
+  _wp_rp_related_posts_query_result_cache_6: a:12:{i:0;O:8:"stdClass":2:{s:7:"post_id";s:4:"1878";s:5:"score";s:17:"55.11291829246457";}i:1;O:8:"stdClass":2:{s:7:"post_id";s:4:"1819";s:5:"score";s:17:"53.20189540230159";}i:2;O:8:"stdClass":2:{s:7:"post_id";s:4:"1693";s:5:"score";s:18:"34.449599970308185";}i:3;O:8:"stdClass":2:{s:7:"post_id";s:4:"1752";s:5:"score";s:18:"29.051316248410345";}i:4;O:8:"stdClass":2:{s:7:"post_id";s:4:"1712";s:5:"score";s:17:"27.45159997758987";}i:5;O:8:"stdClass":2:{s:7:"post_id";s:3:"124";s:5:"score";s:18:"26.929572326958738";}i:6;O:8:"stdClass":2:{s:7:"post_id";s:3:"142";s:5:"score";s:18:"23.516451203997974";}i:7;O:8:"stdClass":2:{s:7:"post_id";s:4:"1887";s:5:"score";s:17:"22.58707414509282";}i:8;O:8:"stdClass":2:{s:7:"post_id";s:4:"2833";s:5:"score";s:17:"18.61447472129317";}i:9;O:8:"stdClass":2:{s:7:"post_id";s:3:"131";s:5:"score";s:18:"18.481527555951523";}i:10;O:8:"stdClass":2:{s:7:"post_id";s:3:"125";s:5:"score";s:18:"18.481527555951523";}i:11;O:8:"stdClass":2:{s:7:"post_id";s:3:"122";s:5:"score";s:18:"18.481527555951523";}}
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1427328186;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:1878;}i:1;a:1:{s:2:"id";i:1712;}i:2;a:1:{s:2:"id";i:124;}}}}
+  _oembed_ede134422df707f54e6578757ef6cf90: "{{unknown}}"
+  _oembed_9a7d51b662a2491c1408d548cbb28c89: "{{unknown}}"
+  _oembed_dd66194d519a7a6fcf71d1e3a6d97d61: "{{unknown}}"
+author:
+  login: vickytnz
+  email: vicky.teinaki@gmail.com
+  display_name: Vicky Teinaki
+  first_name: Vicky
+  last_name: Teinaki
+permalink: "/blog/speedy-mondays-super-mondays-july-2013/"
+excerpt: Talks focusing on speed with tech, be it practical or psychological.
+---
+<p>To be honest, the mood at the Beehive at Newcastle University was anything but speedy, as the region basked in the ongoing heatwave. Regardless, the July Supermondays had a need for speed, from optimisation to psychology. There was also mention of a new usergroup (<a href="http://twitter.com/jsnortheast">JSNortheast</a>, meeting <a href="http://jsnortheast.eventbrite.co.uk">the first Monday of every month</a>).</p>
+<h2>Richard Powell: Speed and Front End Development</h2>
+<p>Richard Powell gave a three-prong attack for considering speed in development: load time, perception of speed, and back end development. Of these, load time is the most important: apparently 80-90% of website load time is on the front end. (Even tumblr doesn't get this right).</p>
+<p>Much like <a title="WordPress North East" href="http://blog.vickyteinaki.com/wordpress-northeast/">Stephen Jones at a recent WP meetup</a>, he recommended optimising and minifying files (for CSS using sprites/icon fonts/base 64 encoding, and concatenating JS and CSS files), obfuscating (JS variables), gzip txt files (70% file reduction). He also discussed being defensive about plugins (e.g. rather than using a tap navigation plugin, it could be done in 3-4 lines of code) loading JS last (even with Async, it doesn't always work), and <a href="http://jakearchibald.com/2013/progressive-enhancement-still-important/">using lazy loading</a>. And <a href="http://jsbin.com/ohumon/1/edit">think about coding efficiently</a>!</p>
+<p>In regards to runtime, his analogy for DOM Interaction was memorable: "think of it like taking the dog for a walk and it making a mess: you have to touch it, but you don't really want to."</p>
+<p>He pointed out that CSS positioning can be expensive: opacity, transforms, and surprisingly static positioning (browser has to recalculate on each load). One nice way to stop something being slow is to give it a rotate position of 0 (it gives it its own engine).</p>
+<p>He gave a plea for API devs to think about how they serve up the content, and also not send people off on a wild goose chase to other files for more info.</p>
+<p>He made notes in relation to perception (a theme carried on in the following talk): a site with progressive loading feels faster than one without, and to not block the API.</p>
+<p>Out of the three, he emphasised the need for load time most (which requires collaboration).</p>
+<p>[caption id="attachment_1746" align="alignnone" width="320"]<img class="size-full wp-image-1746" src="/images/81630635.jpg" alt="Not sure if loading or…" width="320" height="220" /> Slide of the night.[/caption]</p>
+<p>Finally, he points out that it's worth thinking about the tools we can use for testing: Chrome Dev Tools are good, and sites such as JSLint that let you compare code.</p>
+<h2>Graham Morely: the Psychology of Speed</h2>
+<p>Being in a car can be fast, but nothing feels quite so fast as being in a go-kart careening down a hill. Morely focused on how web designers and developers can make a site feel faster.</p>
+<p>As it turns out, the speed of a site can have serious business impact. Examples Morely cited included Amazon tests that 100ms of extra load time=1% drop of sales, a page on Yahoo being 400ms slower causing 3-9% increase 'black clicks', and Mozilla getting 60m more downloads by increasing speed of download on their page for IE (and conversely the cost of 1s delay: 7% conversions, 11% page views , 16% decrease satisfaction).</p>
+<p>Interestingly, speed isn't always important: ATMs that dispensed money too quickly weren't trusted.</p>
+<p>He quoted Souders' rule that  <strong>satisfaction = perception - expectations </strong>and used it as a guideline for work: people are happier with a site that feels faster than they'd expect it to. That said this can be done with information tricks e.g. if you're in a search sites: going beyond "search hotels" to "search 52,420 hotels" with a loader looks faster.</p>
+<p>He cited <a href="http://www.nngroup.com/articles/response-times-3-important-limits/">Neilsen's studies on page times</a> (though noting they're perhaps 10 years old):</p>
+<ul>
+<li>0.1-0.2s =  instantaneous</li>
+<li>0.5-1s = immediate</li>
+<li>2-5s = flow, as it takes about 2s for a person to turn a page and find their position.</li>
+<li>7-10s (has to be) captivating</li>
+</ul>
+<p>You should only spend 10s or more if it's a natural break in user flow (you may wish to have alternate solutions such as let the user leave the page and email them when the task is done).</p>
+<p>He helpfully gave a number of resources to investigate:</p>
+<ul>
+<li><a href="http://www.bookofspeed.com">http://www.bookofspeed.com</a></li>
+<li><a href="http://developers.google.com/speed">http://developers.google.com/speed</a></li>
+<li><a href="http://www.stevesouders.com">http://www.stevesouders.com</a></li>
+</ul>
+<p>Mobile design guru Luke Wobrewski <a href="http://www.lukew.com/ff/entry.asp?1759">has also just written about perception of speed on mobile</a>.</p>
+<h2>Oli Wood: Optimising Canddi</h2>
+<p>Oli Wood spoke from a recent project (Canddi) and his trials and tribulations attempting to optimise it. Above all, his key messages were to measure for <em>what's important (</em>for them is how many inbound customer requests can be processed) and to just attach it ("Back of a fag packet calculations can be good enough").</p>
+<p>There are no silver bullets (they got expensive machines, hosting, PHP-FDM, all sorts of things, none really worked)</p>
+<p>… aim for a silver shotgun cartridge (lots of little small things that can be nailed).</p>
+<blockquote><p>There are no silver bullets… aim for a silver shotgun cartridge.</p></blockquote>
+<p>More practically, he pointed out the importance of testing somewhere not live (as the team use AWS, they can clone and get a 'good enough' results) and to use realistic data (get enough on the test site to be good enough, no more) with defined test scenarios.</p>
+<p>Build a pipeline view (find where the bottlenecks are).</p>
+<p>Identify symptoms (what you can see) but solve problems (your 100% CPU usage could be that you need more machines, or just that you write crappy code).</p>
+<p>Do less big things less often (doing big commands only when you have to).</p>
+<p>Do frequent things much faster, avoid waiting, pull less data ("who writes MySQL? Who writes SELECT *?"). Hunt for collisions</p>
+<p>Cache the painful thing: in memory (can be very effective, even in PHP), with tools such as redis ("almost one-click install, insanely quick")/memcache (may be slightly better as it spreads across machine), url/browser cache</p>
+<p>Use the tools:</p>
+<ul>
+<li>Ab ("install with one command on Apache, and does a quick and dirty hit". It's useful for testing in background) +  Seige (far more detailed in regards to flags which can help to pinpoint where breakpoints are) and EC2 instances. "Install 2 or 3 ubuntu boxes, add EC2 on them and then test"</li>
+<li>Use iostat (will tell you pretty much everything) or sar (-p is also very useful as it can tell you how busy multiple machines are), strace ("terrifies the life out of me" as it tells you what happens inside the processor "run it, get the text file, google the crap out of it"), iftop (for networks), xdebug + webgrind (don't run on a live server!) as well as mongo tools such as mongosniff ('terrifying, powerful, but go to google groups for it'. nginx is faster than apache (sadly)</li>
+<li>They were on PHP, then moved to nodejs and with regis (if you can get it)</li>
+</ul>
+<p>Your aim is <s>to create a loosely coupled components which are horizontally scalable</s> to make the business work (much like the 80/20 rule, beyond a certain point, "it just turns into geekery"). They managed to get the site 10x faster.</p>
+<h2>Elixr: Paul Callaghan</h2>
+<p><a href="http://twitter.com/paulcc_two">Paul Callaghan</a> discussed <a href="http://en.wikipedia.org/wiki/Elixir_(programming_language)">Elixr</a>, a new programming language that runs off Erlang. It's still in its early stages but has been adopted by Soundcloud amongst other companies, and looks to be to ruby programmers what Coffeescript is for python devs. He pointed out a few useful concepts from the language such as creating a pipeline (a series of actions that can then be tracked in various places).</p>
+<h2> Stefan Dantchev: Birthday Attack when randomisation probably helps</h2>
+<p>The night finished with high stakes of cryptography breaking. Well not quite. Dantchev's examples were more theory than practical, but an interesting exploration of what we need to be aware of when it comes to code breaking and hashes. He used The Birthday Attack scenario—given a room of people, who many need to be there before it's likely two share a birthday?—as a means of showing how this works, namely that you use a recursive (factorial) function of the likelihood of it <em>not</em> happening to figure it out. (For birthdays, that number therefore comes up as 23 people, at which point it's just under 50%).</p>
+<p>&nbsp;</p>

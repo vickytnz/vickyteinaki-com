@@ -1,0 +1,77 @@
+---
+layout: post
+title: Theming With Wordpress Multisite
+date: 2013-03-04 00:20:25.000000000 +00:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Coding
+tags:
+- multisite
+- theming
+meta:
+  _edit_last: '1'
+  dsq_thread_id: '1116347929'
+  _wp_old_slug: theming-with-wordpress-multisite
+  _thumbnail_id: '2144'
+  _wpas_skip_2538949: '1'
+  _wpas_skip_6516624: '1'
+  _wp_rp_related_posts_query_result_cache_expiration: '1429226173'
+  _wp_rp_related_posts_query_result_cache_5: a:10:{i:0;O:8:"stdClass":2:{s:7:"post_id";s:2:"94";s:5:"score";s:17:"69.32712733496986";}i:1;O:8:"stdClass":2:{s:7:"post_id";s:2:"92";s:5:"score";s:18:"44.224985530912186";}i:2;O:8:"stdClass":2:{s:7:"post_id";s:4:"1340";s:5:"score";s:18:"26.069376323788156";}i:3;O:8:"stdClass":2:{s:7:"post_id";s:4:"1693";s:5:"score";s:17:"24.89667862362389";}i:4;O:8:"stdClass":2:{s:7:"post_id";s:4:"2191";s:5:"score";s:18:"22.935020117614826";}i:5;O:8:"stdClass":2:{s:7:"post_id";s:3:"122";s:5:"score";s:18:"18.973017179766554";}i:6;O:8:"stdClass":2:{s:7:"post_id";s:4:"1824";s:5:"score";s:18:"17.586722818646663";}i:7;O:8:"stdClass":2:{s:7:"post_id";s:4:"1673";s:5:"score";s:18:"17.586722818646663";}i:8;O:8:"stdClass":2:{s:7:"post_id";s:3:"124";s:5:"score";s:18:"16.742631221122505";}i:9;O:8:"stdClass":2:{s:7:"post_id";s:4:"1878";s:5:"score";s:18:"12.687588252018834";}}
+  _wp_rp_related_posts_query_result_cache_6: a:12:{i:0;O:8:"stdClass":2:{s:7:"post_id";s:2:"94";s:5:"score";s:17:"70.06650445575843";}i:1;O:8:"stdClass":2:{s:7:"post_id";s:2:"92";s:5:"score";s:17:"44.93874876951011";}i:2;O:8:"stdClass":2:{s:7:"post_id";s:4:"1340";s:5:"score";s:17:"26.36419471664931";}i:3;O:8:"stdClass":2:{s:7:"post_id";s:4:"1693";s:5:"score";s:18:"25.051187139983053";}i:4;O:8:"stdClass":2:{s:7:"post_id";s:4:"2191";s:5:"score";s:17:"23.23774457825353";}i:5;O:8:"stdClass":2:{s:7:"post_id";s:3:"122";s:5:"score";s:17:"18.99414294708044";}i:6;O:8:"stdClass":2:{s:7:"post_id";s:4:"1824";s:5:"score";s:18:"17.756064530240966";}i:7;O:8:"stdClass":2:{s:7:"post_id";s:4:"1673";s:5:"score";s:18:"17.756064530240966";}i:8;O:8:"stdClass":2:{s:7:"post_id";s:3:"124";s:5:"score";s:17:"16.65281621528323";}i:9;O:8:"stdClass":2:{s:7:"post_id";s:4:"2833";s:5:"score";s:18:"13.795508945230033";}i:10;O:8:"stdClass":2:{s:7:"post_id";s:4:"1878";s:5:"score";s:18:"12.891538697743918";}i:11;O:8:"stdClass":2:{s:7:"post_id";s:4:"2816";s:5:"score";s:18:"12.440223073941493";}}
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1427473772;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:1340;}i:1;a:1:{s:2:"id";i:122;}i:2;a:1:{s:2:"id";i:94;}}}}
+author:
+  login: vickytnz
+  email: vicky.teinaki@gmail.com
+  display_name: Vicky Teinaki
+  first_name: Vicky
+  last_name: Teinaki
+permalink: "/blog/theming-wordpress-multisite/"
+---
+<p>I was recently asked to do some Wordpress development on a set of two sub-sites that would nest under a main site. It seemed like a good chance to try out Wordpress multi-site. However, as per everything, there are gotchas that you find out when actually implementing a new feature.</p>
+<h2>Why use Multisite?</h2>
+<p>There are a lot of good reasons why not to use Wordpress Multisite, mainly if the functionality is going to change a lot between sites, or there aren't many common users. However, these sites were a good opportunity to do it: shared domain (though you can map to different domains if need be), a custom theme that would only change in colours any minor imagery between the sites (though this wasn't quite as simple as I assumed), and a combination of people working on only one site, or needing access across the board.</p>
+<p><img class="  alignnone" title="Range of sites" alt="Range of sites" src="/images/sites1.jpg" /></p>
+<p>&nbsp;</p>
+<h3>Setting it all up</h3>
+<p>The Multisite installation is well documented and relatively painless (once you've enabled wp-config.php to allow for multisite, you can even make new sites from the Wordpress Dashboard!) . The main difference is that when logging in, you become the Super Administrator able to switch between sites and able to activate plugins and themes (see below).</p>
+<p><img title="Multisite" alt="Multisite" src="/images/multisite-dropdown.png" /></p>
+<p>However, there are some annoying quirks of the system probably stemming from the functionality originally being a plug-in.</p>
+<h3>Uploads don't Share Across Sites</h3>
+<p>This is probably to be expected, but I mention it anyway. While it does mean in some cases you may have to upload a media asset several times, it also means that administrators on each site can delete files without fear of it breaking one of the other sites.</p>
+<h3>Custom Upload Paths? Er, No.</h3>
+<p>I was ecstatic when I found out earlier this year how to get uploads out of that obviously 'made with wordpress' wp-content file folder. (Yes, I get excited about strange things). However, if you try and do anything like this with Multisite, you'll just end up with errors, as far as I can tell. (The files will save, but the media library won't accept them). So, you're stuck with paths looking like /wp-content/uploads/site-1/IMAGE.JPG. It's not ideal for people who'd rather play down the WP aspect or try and safeguard file hacking by moving the folders out of the obvious places, but I guess that this is one of the teething issues for a website becoming a CMS.</p>
+<h3>Mapping Sub-sites: All Or Nothing</h3>
+<p>Similarly, the WP folder rewrites are pernickety. As far as I can tell, you can't have a non-Wordpress top level along with non-WP subfolders.<br />
+I was hoping to have the multisite work as subdomains, but couldn't due to hosting constraints. So, it came down to using subfolders. They actually work reasonably well (you just need to set them in network settings). However, my original plan to have two subfolder sites and a top level static page were quickly scuttled. In short: if you want a top level site and subfolder ones, make them all run as WP sites, even if the top level one is a single page.</p>
+<p><img class="  alignnone" title="The multi-site setup" alt="The multi-site setup" src="/images/network_0.jpg" /></p>
+<h3>Plugins and Themes Don't Have to Be Network Activated to Be Available</h3>
+<p>Another weird thing to get your head around is the Network Activation settings. From what I can see, Multisite strips administrators of individual sites of the ability to add themes and plugins. However, from the Sites Settings as a super-administrator, you can allow these to be specifically available to a site. This is different from Network activate which makes a plugin/theme available to all sites.<br />
+Another interesting point is that you don't have to activate a parent theme when you activate a child one (useful if you're worried about people messing with the parent theme and causing all end of trouble).</p>
+<p><img class="   alignnone" title="Themes and Plugins" alt="Themes and Plugins" src="/images/themes-plugins.jpg" /></p>
+<h2>Theming</h2>
+<h3>Child Theme or Roll Your Own?</h3>
+<p>In the past, I was inclined to use my own defaults when it came to theming. However, now, I'm more inclined to use child themes, particularly when it comes to Wordpress. This is because Wordpress changes incredibly quickly, so I assume that their themes should be more likely to make the most of new developments. (Also, to be honest, Wordpress has always had great themes, far more so than Drupal, which could often be overkill).</p>
+<h3>Cancelling things out in functions.php</h3>
+<p>However, there are some gotchas involved with using these themes. One of the nefarious ones I noticed was the "powered by wordpress" footer appearing as an overlay on the page. These things are easily rectified in functions.php however.</p>
+<h3>No Grandchildren Allowed</h3>
+<p>Unfortunately, you can't have a child theme of a child theme (which you can do in Drupal and is incredibly useful). So, if you want ways to get around this, you have one of three options:</p>
+<ol>
+<li><em>Duplicate themes and activate for each site only.</em> This would be the most painless way, but obviously involves duplication, particularly if you're making global changes to how the theme appears on both sites.</li>
+<li><em>Use the theme options for each site.</em> To be honest, this is probably the official Wordpress way, but I would rather not do it, as it means that your admins can change the colours (thanks to another annoying WP default, anyone who you need permission to be able to change widgets also gets permission to change themes and theme options). In this situation the sites were also highly designed down to the colours, so it made sense to be able to hard code the options.</li>
+<li><em>Use body classes to target specific sites.</em> I preferred the idea in this case of being able to target different sites with CSS overrides and thereby use the single theme as a master theme. However, perhaps unsurprisingly, there is nothing in the body tags that lets you target a specific site on a multi-install. I ended up adding in a class through functions.php. <span class="code" style="display: block; width: 60%; padding: 5%; border: 1px solid grey; background: whitesmoke; font-family: 'Courier New', Courier,  monospace;">function add_slug_body_class( $classes ) {<br />
+global $post;<br />
+if ( isset( $post ) ) {<br />
+$classes[] = $post-&gt;post_type . '-' . $post-&gt;post_name;<br />
+}<br />
+return $classes;<br />
+}<br />
+add_filter( 'body_class', 'add_slug_body_class' );</span></li>
+</ol>
+<p>On hindsight, I'd probably change this to be 'site-1' etc as this is less likely to change than the site title (which is what I hacked it from at present).</p>
+<h2>Other thoughts</h2>
+<p>The risk of editing themes and other administrator power. As I mentioned earlier, it's irritating that by default editing widgets also means that you can edit the theme. However, I've been helped out by an unexpected benefit: the hosting we use has strict settings when it comes to editing files on the server in that it has to be manually unlocked.</p>
+<p>All up, it is pretty cool to see a single theme used in different ways on a multi-install site. And it's handy to be able to tell clients that they can delete whatever they want on their subsite without worry of ruining everyone else's. Still, I think it still is early days in regards to Wordpress Multisite, and would be happy to see them both improve their upload file system, and allow grandchild themes.</p>
