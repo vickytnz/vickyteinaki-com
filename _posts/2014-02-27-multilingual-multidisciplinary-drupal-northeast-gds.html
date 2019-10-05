@@ -1,0 +1,70 @@
+---
+layout: post
+title: 'Multilingual, Multidisciplinary: Drupal Northeast, GDS'
+date: 2014-02-27 01:01:20.000000000 +00:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Coding
+- Event Notes
+tags:
+- drupal northeast
+meta:
+  _edit_last: '1'
+  _wpas_done_all: '1'
+  dsq_thread_id: '2327420612'
+  _thumbnail_id: '1997'
+  _wpas_skip_2538949: '1'
+  _wpas_skip_6516624: '1'
+  _wp_rp_related_posts_query_result_cache_expiration: '1429226205'
+  _wp_rp_related_posts_query_result_cache_5: a:10:{i:0;O:8:"stdClass":2:{s:7:"post_id";s:3:"107";s:5:"score";s:17:"64.22384009124913";}i:1;O:8:"stdClass":2:{s:7:"post_id";s:3:"142";s:5:"score";s:17:"33.36150385101902";}i:2;O:8:"stdClass":2:{s:7:"post_id";s:2:"98";s:5:"score";s:18:"30.903989369958182";}i:3;O:8:"stdClass":2:{s:7:"post_id";s:3:"124";s:5:"score";s:18:"24.926861801821815";}i:4;O:8:"stdClass":2:{s:7:"post_id";s:4:"1739";s:5:"score";s:18:"21.810572565541666";}i:5;O:8:"stdClass":2:{s:7:"post_id";s:4:"1712";s:5:"score";s:18:"21.810572565541666";}i:6;O:8:"stdClass":2:{s:7:"post_id";s:3:"122";s:5:"score";s:18:"21.810572565541666";}i:7;O:8:"stdClass":2:{s:7:"post_id";s:4:"1903";s:5:"score";s:17:"20.13586167780648";}i:8;O:8:"stdClass":2:{s:7:"post_id";s:3:"128";s:5:"score";s:17:"20.00158307217439";}i:9;O:8:"stdClass":2:{s:7:"post_id";s:3:"123";s:5:"score";s:17:"19.91177091264763";}}
+  _wp_rp_related_posts_query_result_cache_6: a:12:{i:0;O:8:"stdClass":2:{s:7:"post_id";s:3:"107";s:5:"score";s:17:"65.00040995937039";}i:1;O:8:"stdClass":2:{s:7:"post_id";s:3:"142";s:5:"score";s:17:"34.02672101718015";}i:2;O:8:"stdClass":2:{s:7:"post_id";s:2:"98";s:5:"score";s:18:"31.805967630576493";}i:3;O:8:"stdClass":2:{s:7:"post_id";s:3:"124";s:5:"score";s:18:"25.543277965838847";}i:4;O:8:"stdClass":2:{s:7:"post_id";s:4:"1739";s:5:"score";s:17:"22.58707414509282";}i:5;O:8:"stdClass":2:{s:7:"post_id";s:4:"1712";s:5:"score";s:17:"22.58707414509282";}i:6;O:8:"stdClass":2:{s:7:"post_id";s:3:"122";s:5:"score";s:18:"21.959759027328683";}i:7;O:8:"stdClass":2:{s:7:"post_id";s:4:"1903";s:5:"score";s:18:"20.786886575828294";}i:8;O:8:"stdClass":2:{s:7:"post_id";s:3:"128";s:5:"score";s:17:"20.47858521614675";}i:9;O:8:"stdClass":2:{s:7:"post_id";s:3:"123";s:5:"score";s:17:"20.37458078877729";}i:10;O:8:"stdClass":2:{s:7:"post_id";s:2:"91";s:5:"score";s:17:"19.55952055738987";}i:11;O:8:"stdClass":2:{s:7:"post_id";s:4:"2768";s:5:"score";s:18:"19.550447545481354";}}
+author:
+  login: vickytnz
+  email: vicky.teinaki@gmail.com
+  display_name: Vicky Teinaki
+  first_name: Vicky
+  last_name: Teinaki
+permalink: "/blog/multilingual-multidisciplinary-drupal-northeast-gds/"
+excerpt: Two events, one night. (Sorry). Drupal Northeast tackled multi-lingual sites,
+  while GDS took advantage of being in town for a meetup.
+---
+<p>You know it's a good night for the tech industry when you have to skip out of one event right as it ends to go to another! Tonight was both the monthly <a href="http://drupalnortheast.org.uk">Drupal Northeast Meetup</a>, and a <a href="http://lanyrd.com/2014/meet-digital-government-folk/">more informal meetup of the Google Digital Services folk</a> (who've been in town interviewing for the new Newcastle Digital Centre that's going to be based out of Longbenton of all places).</p>
+<h2>Drupal North East: Multilingual Sites</h2>
+<p>This month, <a href="http://twitter.com/adshill">Adam Hill</a> did a live demo of setting up a multilingual site.</p>
+<p>His overall comments on structuring a multilingual site would make a content strategist proud:</p>
+<blockquote><p>"Don't build a multi-lingual site in English and add extra languages, start building the infrastructure for the two [or more] languages from the start".</p></blockquote>
+<p>Part of the reason this is important is because of URL paths (if you set up the site well, they can exist clearly separate of each other) and partly because it means you can plan out how to input the translations without having to battle the admin in the different languages!</p>
+<p>Into the more nitty-gritty Drupal stuff.</p>
+<p>First of all: decide the source language for your site *at the start*. You can't change it half-way through without causing a load of trouble (something which Hill's team learnt the hard way when doing projects).</p>
+<p>According to Hill, there are two elements of Drupal translation:</p>
+<ol>
+<li>content translation</li>
+<li>string translation (backend, strings, also blocks etc)</li>
+</ol>
+<p>While the former is the crux of your important information, the latter is also key for making the experience of using a site truly multi-lingual. It's also a bit trickier at times since it delves into Drupal core: if you're lucky, your other languages will have language translations ready to  upload from drupal.org, if not … you'll be working with someone who knows the language to figure out the appropriate translated UI words.</p>
+<p>Hill showed that you do need a number of modules to make internationalisation play nice:</p>
+<ul>
+<li>In core you want Content Translate and Localisation.</li>
+<li><a href="https://drupal.org/project/i18n">Internationalization (i8n)</a> requires Variable to work, but as Hill showed, this is useful in its own right as it allows you to set up whether various elements such at the  language slogans and front pages have different language language options (e.g. /fr, /ar ) .Other useful ones include 404s.</li>
+<li><a href="https://drupal.org/project/i18nviews">Internationalization Views</a> (only in dev, views generally got a lot better for v3 but this ties up loose ends) is necessary if you're working with views, though Hill did warn that it doesn't always quite do what you'd expect, so use with care.</li>
+<li>Beyond this, menu translation, field translation, translation redirect, path translation, translation redirect, translation sets, and taxonomy translation are all self-explanatory and useful. Block translate (and context module) is also particularly helpful for controlling blocks.</li>
+</ul>
+<p>In terms of setting up and implementing a multilingual site, Hill had the following tips:</p>
+<ul>
+<li>detect language by path and folders (subdomains can be quirky). Auto-sniffing by browser is to be avoided, and while there are add-ons like IP sniffing, they have high overhead.</li>
+<li>Good practices when theming and creating modules should set you up well for multi-lingual. There are some quirks to do with themes for rtl languages (namely that you'll have to redo all your floats and padding) but since the text itself automatically switches, it's not as big an issue as you'd think it would be.  Similarly,  anything in modules/system should be wrapped in a 't' as it opens it up to be translated for translation if need be.</li>
+<li>Hill has found the best way to manage menus is to just create separate ones that show up per language. This also applies for blocks.</li>
+<li>If you're dealing with a multi-author site or have images that share across languages (make sure these don't have text embedded in them!) the synchronise translation feature can be helpful in mapping over content that should stay the same such as publish date, author name and images.</li>
+</ul>
+<p>Only at the very end did he sneakily point out the very nice trilingual (including Arabic!) site <a href="http://www.annalindhfoundation.org/">annalindhfoundation.org</a> that his company recently released.</p>
+<p>[caption id="attachment_1890" align="alignnone" width="474"]<a href="http://vickyteinaki.com/2014/uploads/anna-en.png"><img class="size-large wp-image-1890" src="/images/anna-en-1024x538.png" alt="Anna Linh: English" width="474" height="249" /></a> Anna Linh: English site[/caption]</p>
+<p>[caption id="attachment_1892" align="alignnone" width="474"]<a href="http://vickyteinaki.com/2014/uploads/anna-fr.png"><img class="size-large wp-image-1892" src="/images/anna-fr-1024x536.png" alt="Anna Linh: French site" width="474" height="248" /></a> …and the French version (not the more verbose text)[/caption]</p>
+<p>[caption id="attachment_1894" align="alignnone" width="474"]<a href="http://vickyteinaki.com/2014/uploads/anna-ar.png"><img class="size-large wp-image-1894" src="/images/anna-ar-1024x537.png" alt="Anna Linh: Arabic version" width="474" height="248" /></a> And the Arabic version as well as being rtl is visually sparse due to the compact language.[/caption]</p>
+<p>Some of the things his team learnt from the site was the issues of character density: as it turns out, French is more verbose than English (causing issues with labels), while Arabic as well as being right-to-left is also a far more compact language, thus making the designs look extremely sparse in comparison.</p>
+<p>Also, random fact of the day: Hill found out that if you want to use Arabic characters in Photoshop, you have to but the Middle Eastern edition!</p>
+<h2>GDS Meetup</h2>
+<p>After that it was straight over to Brewdog to see who of the digital set were mingling with digital government peeps. From the brief chat I got to have with some of the GDC team (who'd all bravely come up from London and had apparently been surveying the Toon from a nearby hotel when not conducting interviews for the new centre) it sounds as if there's going to be some interesting things going on in terms of cross-disciplinary teams. In unrelated matters, I got my hands on a complimentary copy of Design Transitions thanks to Emma Jefferies, which also had a surreal moment when one of the GDS people realised they were in one of the photos in the book!</p>

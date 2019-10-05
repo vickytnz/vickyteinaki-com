@@ -1,0 +1,82 @@
+---
+layout: post
+title: 'Back to Basics, Kinda: Hardcoding A One Page Responsive Site'
+date: 2013-02-03 20:32:28.000000000 +00:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Coding
+tags:
+- css
+- theming
+meta:
+  dsq_thread_id: '1063296945'
+  _edit_last: '1'
+  _wp_old_slug: back-to-basics-kinda-hardcoding-a-one-page-responsive-site
+  _thumbnail_id: '2189'
+  _wpas_skip_2538949: '1'
+  _wpas_skip_6516624: '1'
+  wpcf-site-live: a:1:{s:64:"wpcf-fields-checkboxes-option-7fd36ba39ffa167fb86cc72d9142fee4-2";i:0;}
+  _wp_rp_related_posts_query_result_cache_expiration: '1429223620'
+  _wp_rp_related_posts_query_result_cache_5: a:10:{i:0;O:8:"stdClass":2:{s:7:"post_id";s:2:"92";s:5:"score";s:17:"92.27373666610922";}i:1;O:8:"stdClass":2:{s:7:"post_id";s:2:"90";s:5:"score";s:17:"69.32712733496986";}i:2;O:8:"stdClass":2:{s:7:"post_id";s:2:"95";s:5:"score";s:18:"57.023332264709076";}i:3;O:8:"stdClass":2:{s:7:"post_id";s:4:"2191";s:5:"score";s:18:"26.915090025356278";}i:4;O:8:"stdClass":2:{s:7:"post_id";s:4:"1878";s:5:"score";s:17:"25.15031166490178";}i:5;O:8:"stdClass":2:{s:7:"post_id";s:3:"122";s:5:"score";s:18:"22.953087087508006";}i:6;O:8:"stdClass":2:{s:7:"post_id";s:4:"1693";s:5:"score";s:18:"22.298112655320203";}i:7;O:8:"stdClass":2:{s:7:"post_id";s:4:"1340";s:5:"score";s:18:"21.566792726388115";}i:8;O:8:"stdClass":2:{s:7:"post_id";s:4:"1824";s:5:"score";s:18:"17.586722818646663";}i:9;O:8:"stdClass":2:{s:7:"post_id";s:4:"1673";s:5:"score";s:18:"17.586722818646663";}}
+  _wp_rp_related_posts_query_result_cache_6: a:12:{i:0;O:8:"stdClass":2:{s:7:"post_id";s:2:"92";s:5:"score";s:17:"93.23852155594832";}i:1;O:8:"stdClass":2:{s:7:"post_id";s:2:"90";s:5:"score";s:17:"70.06650445575843";}i:2;O:8:"stdClass":2:{s:7:"post_id";s:2:"95";s:5:"score";s:18:"57.646034628619574";}i:3;O:8:"stdClass":2:{s:7:"post_id";s:4:"2191";s:5:"score";s:17:"26.71597604963069";}i:4;O:8:"stdClass":2:{s:7:"post_id";s:4:"1878";s:5:"score";s:18:"24.977900355529417";}i:5;O:8:"stdClass":2:{s:7:"post_id";s:3:"122";s:5:"score";s:16:"22.4723744184576";}i:6;O:8:"stdClass":2:{s:7:"post_id";s:4:"2833";s:5:"score";s:17:"22.13826624910424";}i:7;O:8:"stdClass":2:{s:7:"post_id";s:4:"1693";s:5:"score";s:18:"22.118513002301604";}i:8;O:8:"stdClass":2:{s:7:"post_id";s:4:"1340";s:5:"score";s:18:"21.234296001618127";}i:9;O:8:"stdClass":2:{s:7:"post_id";s:4:"1824";s:5:"score";s:18:"17.756064530240966";}i:10;O:8:"stdClass":2:{s:7:"post_id";s:4:"1673";s:5:"score";s:18:"17.756064530240966";}i:11;O:8:"stdClass":2:{s:7:"post_id";s:2:"91";s:5:"score";s:17:"16.65281621528323";}}
+  _wp_rp_image: '2189'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1427437761;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:90;}i:1;a:1:{s:2:"id";i:1340;}i:2;a:1:{s:2:"id";i:1878;}}}}
+  header_image: ''
+  header_image_attributes: a:1:{s:6:"colour";s:0:"";}
+  header_title_color: ''
+  post_text_shadow: 'no'
+  video_link: ''
+  main_video: ''
+  video_hosted: ''
+  video_hosted_ogv: ''
+  custom_css: ''
+author:
+  login: vickytnz
+  email: vicky.teinaki@gmail.com
+  display_name: Vicky Teinaki
+  first_name: Vicky
+  last_name: Teinaki
+permalink: "/blog/back-basics-kinda-hardcoding-one-page-responsive-site/"
+---
+<p>When was the last time you hard coded a website? I can't even really remember. I think it would have been in 2009 at the very latest, with a small brochureware site. Certainly I remember testing for IE6 and 7.</p>
+<p>Since then, I've been working on Wordpress and Drupal (and even the odd Joomla theme). While it brings its own set of issues, the one thing it does mean is that you usually start with something.</p>
+<p>However, I was recently asked to help out a colleague who was waiting for their content managed site to be finished (the developer had got sick and so was a few weeks behind) and so needed a one-page site to tide her over until it was done. When I ever end up doing projects to help out other people, I try to use it as a means of trying something out I'd like to do. In this case, it was trying to make a responsive site (and obviously HTML5 and CSS3). And make it by hand, as the Wordpress site could be ready in a matter of weeks if she's lucky. It was definitely a blast from the past. What did I find?</p>
+<h2>There's a framework for that.</h2>
+<p>I settled on the <a href="http://www.initializr.com/">Initializer framework</a>, as it included a lot of starters, and had a layout similar to what I wanted. (Were I going for more of a landing page look, I'd have used Bootstrap). There were also <a href="http://html5up.net/">some beautiful themes available</a>, but they didn't use Javascript and so didn't shift. (One could argue that this is a good thing, but I like being able to shift things around!)</p>
+<h2>You know that 'bootstrap look'? It's Helvetica Neue at font-weight: 200.</h2>
+<p><img alt="Bootstrap" src="/images/bootstrap_1.gif" /></p>
+<p style="text-align: center;"><em>The font used on Bootstrap, and the related code</em></p>
+<p>I'd always wondered what exactly it was about <a href="http://getbootstrap.com">the Twitter Bootstrap</a> fontstack that made it look so good. It turned out that they'd been using font-weights, something which I remember messing around with way back in the day but not really coming back to. I personally have memories of Helvetica Neue rendering horribly on my then-work's computers, but I suspect things have changed since then.</p>
+<h2>Design around the key breakpoint.</h2>
+<p><img alt="Full and Mobile" src="/images/full-mobile_1.png" /></p>
+<p style="text-align: center;"><em>The mobile and full widths…</em></p>
+<p><img style="width: 720px; height: 477px;" alt="Breakpoint" src="/images/around-the-breakpoint_1.png" /></p>
+<p style="text-align: center;"><em>… and around the 768 breakpoint</em></p>
+<p>For me, that was 768px, the point where the system snaps between no floats and a two column float. I'd been working from the up to 1180 breakpoint and got myself rather confused in regards to percentages and the like. What's more, just larger than the breakpoint is where the design will look its worst if you mess up something. Blocks can be problematic at mobile size. The design I was theming was beautiful at a higher screen-width, but as soon as I narrowed it the blocks became excessive. In the end, I opted to take the body text entirely out of the bock and to just sit on the body.</p>
+<p>[EDIT: since I've written this, I've seen Mark Boulton's <a href="http://www.markboulton.co.uk/journal/theinbetween">thoughtful post about 'the inbetween'</a>. He suggests to specifically look out for the following things when the viewport changes:</p>
+<ul>
+<li><em>Type size and leading.</em> Does it need to change?</li>
+<li><em>White space (macro and micro).</em> Do you need to adjust margins and padding?</li>
+<li><em>Vertical space.</em> Do you need to reduce it and make the content more or less dense?</li>
+<li><em>Flow.</em> How is the readers eye movement going to change as you change these elements?</li>
+<li><em>Words.</em> Are there now too many on one line? Or too few?</li>
+<li><em>Source order.</em> Are the right things in the right place?</li>
+</ul>
+<p>The one joy about using a framework such as Bootstrap is that these things have generally been considered, but it's still a worthwhile list. I know I changed the source order of some of the blocks after considering where they would fall on a mobile screen.</p>
+<p>Boulton also notes that his studio tends to keep all the CSS together in one stylesheet, but are also accounting for more rather than less viewports.]</p>
+<h2>IE6 is well and truly dead.</h2>
+<p>I remember having to test things in IE6, but this framework pretty much puts up a message saying "you too old for this place". (I have to admit that I haven't tested this design in different browsers as I hope that the shivs should fix them).</p>
+<h2>You'll occasionally yearn for easy PHP and plugins/modules</h2>
+<p><img style="width: 720px; height: 342px;" alt="Twitter " src="/images/twitter_1_1.png" /></p>
+<p style="text-align: center;"><em>Twitter pulled in from Seaofclouds jQuery framework</em></p>
+<p>Plugging in services is, as you might expect, a lot more problematic —or less themeable —on a handcoded site. One of the aspects of the design was a twitter feed. This would be a piece of cake on a CMS thanks to plugins or modules (or even just being able to grab PHP code) but on a hard-coded site is more problematic as you either have to create a separate php file to feed in the information, use the (functional but highly branded) official widgets, or use Javacript. I went for the latter as the framework already used jQuery, and it was cleaner. I found a useful and <a href="https://github.com/seaofclouds/tweet/">highly customisable JS framework for showing tweets</a>. [EDIT JUNE 2013: as Twitter has changed this API the code no longer works on the site]. There is a point where you realise it's not worth staying hard-coded. There was the option to put images on the page. I realised that the time of getting a library and sorting out how a slideshow would work probably wasn't worth it, given that the site would be replaced by a content managed one that would make this a heck of a lot easier.</p>
+<h2>HTML5-what?</h2>
+<p>I have to admit that I'm still not entirely clear about all of the new attributes available to me (unlike the CSS stuff, which we tend to be aware of as they're obviously useful). I have a few things that I'm not sure are semantically correct, like having more than one footer. And I suspect there are things like date attributes that I could use. It reminded me that I need to investigate them, even if CMSes like Drupal are still struggling to get them into their core code outputs.</p>
+<h2>The land of the imageless.</h2>
+<p>I don't know about other people, but I'd been taught to load your site logo using background CSS. Which is usually fine … until you have a site without a single image on it. It means that if anyone shares the website on social media, there's nothing available to show as a preview. I don't know if this is really a problem, given it's a quirk of one page websites, but something that's worth thinking about.</p>
+<p>For those that are interested in seeing the holding page, <a href="http://web.archive.org/web/20131109131349/http://www.thedesigndoctor.eu:80/">it's here</a>. (Again, it may not be up for that long).</p>
+<p>[EDIT: there's also a good article by <a href="http://uxdesign.smashingmagazine.com/2012/05/30/design-process-responsive-age/">Drew Clemens over on Smashing Magazine about doing responsive design</a>.]</p>
