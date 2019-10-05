@@ -1,6 +1,6 @@
 basic_settings:
   site_title: Vicky Teinaki
-  site_tagline: Designer working in central government.
+  site_tagline: Designer working in Newcastle upon Tyne, UK.
   favicon_image: /images/favicon.png
 
 header_settings:
@@ -23,7 +23,7 @@ grid_settings:
   grid_spacing: 10
 
 contact_settings:
-  form_action: 'https://formspree.io/your@email.com'
+  form_action: 'https://formspree.io/vicky.teinaki@gmail.com'
   confirmation_url: '/thanks'
   email_subject: 'Contact form submission'
   send_button_text: 'Send Message'
